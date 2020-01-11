@@ -1,0 +1,23 @@
+<div class="row">
+  <div  *ngIf = "output">
+    <div class="column">
+      <div class="card">
+          <h3>Input</h3>
+          <span id = "inputText">{{ output.InputText}}</span>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card"><h3>PIN</h3>
+        <span id = "pin"></span>{{ output.PassKey}}</div>
+    </div>
+    <div class="column">
+      <div class="card"><h3>Output</h3>
+        <span id = "outputText">{{ output.OutputText }} </span></div>
+    </div>
+  </div>
+    <div class="column" *ngIf = "!output">
+        <div class="card"><h1>NO DATA</h1>
+          <span id = "outputText">You haven't encrypted or decrypted any data</span></div>
+      </div>
+  
+  </div>

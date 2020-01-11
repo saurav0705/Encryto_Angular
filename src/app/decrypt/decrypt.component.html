@@ -1,0 +1,13 @@
+<div>
+    <form (ngSubmit)="OnSubmit()">
+      <label for="InputText">Encrypted</label>
+      <input type="text" id="InputText" name="InputText" placeholder="Your text.." required [(ngModel)]="encrypted">
+  
+      <label for="pin">PIN</label>
+      <input type="number" id="pin" name="pin" placeholder="Your pin name.." required [(ngModel)]="pin">
+  
+      
+    
+      <button type="submit">Decrypt</button>
+    </form>
+  </div>

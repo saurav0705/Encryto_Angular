@@ -1,0 +1,19 @@
+<script>
+function toggle(){
+    if(document.getElementsByClassName("nav").style.display==="none"){
+document.getElementsByClassName("nav").style.display="block";}
+else{
+    document.getElementsByClassName("nav").style.display="none";
+}
+}
+</script>
+<div   class="container"  fxLayout="row" fxLayout.xs="column">
+        <a mat-button onclick=""> Encrypto</a>
+    <a mat-button routerLink="/home" routerLinkActive="active" class="nav"><span class="fa fa-home fa-lg"></span> Home</a>    
+    <a mat-button routerLink="/about" routerLinkActive="active" class="nav"><span class="fa fa-info fa-lg"></span> Your Data</a>
+    <a mat-button routerLink="/encrypt" routerLinkActive="active" class="nav"><span class="fa fa-list fa-lg"></span> Encrypt</a>
+    <a mat-button routerLink="/decrypt" routerLinkActive="active" class="nav"><span class="fa fa-list fa-lg"></span> Decrypt</a>
+
+</div>
+  
+  

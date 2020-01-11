@@ -1,0 +1,38 @@
+$lt-gray: #ddd;
+$background-dark: #512DA8;
+$background-light: #9575CD;
+$background-pale: #D1C4E9;
+
+@mixin zero-margin($pad-up-down, $pad-left-right) {
+    margin: 0px auto;
+    padding: $pad-up-down $pad-left-right;
+}
+
+.jumbotron {
+    @include zero-margin(70px,30px);
+    background: $background-light ;
+    color:floralwhite;
+    min-height: 150px;
+}
+
+a{
+    padding: 50px;
+}
+
+.active{
+    background-color: yellowgreen;
+}
+
+.container{
+    background-color: #4CAF50;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    ::ng-deep .mat-button{
+        height: 0.05px;
+        min-height: 0.1px;
+        padding: 0;
+    }
+    
+  }

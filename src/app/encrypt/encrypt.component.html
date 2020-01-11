@@ -1,0 +1,9 @@
+<div>
+    <form (ngSubmit)="OnSubmit()">
+      <label for="InputText">Enter Text Here</label>
+      <input type="text" id="InputText" name="InputText" placeholder="Your text.." [(ngModel)]="text" required>
+  
+      <button type="submit" >Encrypt</button>
+      
+    </form>
+  </div>
